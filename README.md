@@ -1,8 +1,8 @@
-# Cats vs Dogs (Dual 3090 Training)
+# Cats vs Dogs
 
 Concise, in‑depth guide to run multi‑GPU training, understand how it works, and what’s optimized.
 
-## Quick Start (Dual 3090)
+## Quick Start
 ```bash
 pip install -r requirements.txt
 ./run_train.sh
@@ -33,7 +33,7 @@ Override with `--train-dir` and `--val-dir` if needed.
 - Logs to TensorBoard.
 - Saves `checkpoints/best.pt` and `checkpoints/last.pt`.
 
-## Core Optimizations (Why It’s Fast + Stable)
+## Core Optimizations
 Compute‑focused:
 - **Mixed precision (FP16/BF16)** via Accelerate to boost throughput on 3090s.
 - **TF32** enabled for matmuls and cuDNN.
